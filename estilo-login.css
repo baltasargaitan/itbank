@@ -33,7 +33,7 @@ header a #logo {
     
     position: absolute;  /* Posiciona el elemento de manera absoluta */
     top: 0;  /* Alinea el elemento con el borde superior de la página */
-    left: 95%;  /* Posiciona el centro del elemento en el 50% del ancho de la página */
+    left: 80%;  /* Posiciona el centro del elemento en el 50% del ancho de la página */
     transform: translateX(-50%);  /* Mueve el elemento hacia la izquierda para que quede centrado */
 
     text-align: center;  /* Centra el contenido dentro del contenedor */
