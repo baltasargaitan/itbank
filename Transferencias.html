@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transferencia</title>
+    <link rel="stylesheet" href="Transferencias.css">
+</head>
+<header>
+    <a href="paginaprincipal.html">
+        <img id="logo" width="70" height="70" alt="Logo del banco / recargar la página" src="LogoTimebank.png">
+    </a>
+</header>
+<body>
+    <!--Caja principal-->
+
+    <Div class="formulario">
+
+        <h1>Nueva Transferencia</h1>
+
+        <form id="transferencia" method="post">
+
+            <div class="datos">
+                <input type="text" required>
+                <label>Inserte   CVU/CBU/ALIAS</label>
+            </div>
+
+            <div class="datos">
+                <input type="number" min="0" max="999999999999"  required>
+                <label> Ingrese el monto </label>
+            </div>
+
+            <select id="opciones" name="opciones" required>
+             <option value="" disabled selected>Motivo</option>
+              <option value="opcion1">Servicios</option>
+              <option value="opcion2">Alquiler</option>
+              <option value="opcion3">Haberes</option>
+              <option value="opcion3">Varios</option>
+            </select>
+        <!--Boton "Transferir"-->
+
+        
+        <input type="submit" value="Transferir" >
+ 
+        </form>
+        <div id="realizada" class="oculto">¡Transferencia realizada con exito! </div>
+        
+    </Div>
+    <script src="transferencia.js"></script>
+    
+    
+</body>
+</html>
+
+        
+    
+</body>
+</html>

@@ -61,6 +61,7 @@ header h1 {
     max-width: 400px;
     min-width: 300px;
 
+    max-width: 400px;min-width: 300px;
 }
 .formulario h1{
     text-align: center;
@@ -184,4 +185,40 @@ input[type="submit"]:hover{
     left:450px;
     top:100px ;
     
+}
+
+@media (max-width: 900px) {
+    header, footer {
+        padding: 15px;
+    }
+
+    header h1, #main-content h2, #main-content h3, #main-content h4, #main-content p {
+        font-size: 90%;
+    }
+
+
+    #close-button {
+        left: -35px; /* Ajuste del botón de cierre */
+    }
+
+    footer {
+        margin: 5%;
+        width: 90%;
+    }
+}
+
+/* Estilos para smartphones (ancho menor a 600px) */
+@media (max-width: 600px) {
+    header, footer {
+        padding: 10px;
+    }
+
+    header h1, #main-content h2, #main-content h3, #main-content h4, #main-content p {
+        font-size: 80%;
+    }
+
+    footer {
+        margin: 2%;
+        width: 95%;
+    }
 }

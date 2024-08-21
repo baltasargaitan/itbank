@@ -14,38 +14,37 @@
         <h1>Time Bank</h1>
         <img id="logo" width="100" height="100" alt="Logo del banco / recargar la página" src="LogoTimebank.png">
     </a>
-    <div class="contenedor">
+   <div class="contenedor">
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
         <label for="menu-toggle">
             <img src="menulogo.webp" width="50" height="50" alt="menu desplegable" class="desplegable-icon">
         </label>
         <nav id="desplegable">
+            <label for="menu-toggle" id="close-button" aria-label="Close menu">x</label>
             <ul>
                 <li><a href="#" onclick="mostrarContenido('home')">Inicio</a><br></li>
                 <li><a href="#" onclick="mostrarContenido('cuentas')">Cuentas</a><br></li>
-                <li><a href="#" onclick="mostrarContenido('prestamos')">Préstamos</a><br></li>
-                <li><a href="#" onclick="mostrarContenido('tarjetas')">Transferencias</a><br></li>
+                <li><a href="Prestamo.html" onclick="mostrarContenido('prestamos')">Préstamos</a><br></li>
+                <li><a href="Transferencias.html" onclick="mostrarContenido('tarjetas')">Transferencias</a><br></li>
                 <li><a href="login_simulacion.html" ">Salir</a><br></li>
-                </ul>
-            </div>
+            </ul>
         </nav>
     </div>
 </header>
 
-
-
-
 </div>
-        <script>
-            function desplegar() {
-                var content = document.getElementById('desplegable');
-                if (content.style.display === 'none') {
-                    content.style.display = 'block';
-                } else {
-                    content.style.display = 'none';
-                }
-            }
-        </script>
+<script>
+    function desplegar() {
+        var content = document.getElementById('desplegable');
+        if (content.style.display === 'none') {
+            content.style.display = 'block';
+        } else {
+            content.style.display = 'none';
+        }
+    }
+</script>
+
+
     <!-- Área principal -->
     <div id="main-content">
         <h2>Bienvenido a Time Bank</h2>
@@ -54,43 +53,42 @@
         de manera fácil y segura. Si tienes alguna pregunta, nuestro equipo de soporte 
         está aquí para ayudarte cuando gustes!.</h4>
 
-    <script>
-        function recargar(logo){
-            location.reload(); //recargar pagina 
-            }
-    </script>
+
     </div> 
-
-
-    <script>
-        function mostrarContenido(seccion) {
-            var contenido = {
-                'home': `
-                    <h3>Inicio</h3>
-                    <p>Bienvenido a Time Bank. Aquí puedes gestionar todas tus cuentas y servicios financieros.</p>
-                    `,
-                'cuentas': `
-                    <h3>Cuentas</h3>
-                    <p>Consulta la información sobre tus cuentas bancarias, saldos y movimientos.</p>
-                `,
-                'prestamos': `
-                    <h3>Préstamos</h3>
-                    <p>Conoce nuestros productos de préstamos y solicita el que mejor se adapte a tus necesidades.</p>
-                `,
-                'tarjetas': `
-                    <h3>Transferencias</h3>
-                    <p>Realizar transferencia.</p>
-                `,
-            };
-
-            // Actualizar el contenido del área principal
-            document.getElementById('main-content').innerHTML = contenido[seccion];
+<script> //recargar pagina 
+    function recargar(logo){
+        location.reload(); 
         }
-    </script>
-        <!-- Menú lateral -->
-        <br><br><br>
+</script>
 
-<a href="#"></a>
+
+<script>
+    function mostrarContenido(seccion) {
+        var contenido = {
+            'home': `
+                <h3>Inicio</h3>
+                <p>Bienvenido a Time Bank. Aquí puedes gestionar todas tus cuentas y servicios financieros.</p>
+                `,
+            'cuentas': `
+                <h3>Cuentas</h3>
+                <p>Consulta la información sobre tus cuentas bancarias, saldos y movimientos.</p>
+            `,
+            'prestamos': `
+                <h3>Préstamos</h3>
+                <p>Conoce nuestros productos de préstamos y solicita el que mejor se adapte a tus necesidades.</p>
+            `,
+            'tarjetas': `
+                <h3>Transferencias</h3>
+                <p>Realizar transferencia.</p>
+            `,
+        };
+
+        // Actualizar el contenido del área principal
+        document.getElementById('main-content').innerHTML = contenido[seccion];
+    }
+</script>
+
+
 
 
     
