@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Script para incluir los iconos de FontAwesome -->
     <script src="https://kit.fontawesome.com/3c44aa10f3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="prestamo.css">
     <title>Simulador de Prestamo</title>
+    <!-- Estilos adicionales para iconos de GitHub -->
     <link rel="stylesheet" href="css/style-icon-github.css">
     <script src="prestamo.js"></script>
 </head>
@@ -16,13 +18,15 @@
     </a>
 </header>
 <body>
+    <!-- Contenedor principal del simulador de préstamos -->
     <div class="form">
             <h1>SIMULADOR DE PRESTAMO</h1>
-            <form id="rellenable">
+            <!-- Formulario donde el usuario ingresa los datos para el simulador -->
+        <form id="rellenable">
                 <div>
                     <label for="capital">CAPITAL 
                         <input type="number" min="0" max="99999999999" placeholder="Ingrese el capital prestado" id="capital">
-                        <i class="fas fa-coins"></i>
+                        <i class="fas fa-coins"></i> <!-- Ícono decorativo de FontAwesome -->
                     </label>
                 </div>
                 <div>
@@ -38,9 +42,11 @@
                     </label>
                 </div>
             </form>
+         <!-- Botón que llama a la función 'gen_table()' para calcular los datos ingresados -->
         <button id="calcular" onclick="gen_table();">CALCULAR</button>
 
         <hr>
+        <!-- Tabla que muestra los resultados del cálculo del préstamo -->
         <table class="tab">
             <thead>
                 <tr>
@@ -53,6 +59,7 @@
             <tbody id="tab">
             </tbody>
             <tfoot>
+                <!-- Fila con los totales del capital, interés y el total a pagar -->
                 <tr>
                     <td class="ft">TOTAL</td>
                     <td id="t1"></td>
