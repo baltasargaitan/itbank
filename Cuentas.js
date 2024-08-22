@@ -7,19 +7,19 @@ function convert() {
         'ARS': {
             'USD': 0.0007,
             'GBP': 0.0005,
-            'REA': 0.004
+            'BRL': 0.004
         },
         'USD': {
             'ARS': 1400,
             'GBP': 0.80,
-            'REA': 5.50
+            'BRL': 5.50
         },
         'GBP': {
             'USD': 1.31,
             'ARS': 1800,
-            'REA': 7.20
+            'BRL': 7.20
         },
-        'REA': {
+        'BRL': {
             'USD': 0.20,
             'GBP': 0.14,
             'ARS': 240
