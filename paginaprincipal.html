@@ -10,16 +10,21 @@
 <body>
 
 <header>
+    <!-- Logo y título del banco que al hacer clic recarga la página -->
     <a href="#" onclick="recargar()">
         <h1>Time Bank</h1>
         <img id="logo" width="100" height="100" alt="Logo del banco / recargar la página" src="LogoTimebank.png">
     </a>
-   <div class="contenedor">
+   <!-- Contenedor del menú desplegable -->
+    <div class="contenedor">
+        <!-- Checkbox para controlar la visibilidad del menú desplegable -->
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
         <label for="menu-toggle">
             <img src="menulogo.webp" width="50" height="50" alt="menu desplegable" class="desplegable-icon">
         </label>
+        <!-- Menú de navegación -->
         <nav id="desplegable">
+            <!-- Botón para cerrar el menú desplegable -->
             <label for="menu-toggle" id="close-button" aria-label="Close menu">x</label>
             <ul>
                 <li><a href="#" onclick="mostrarContenido('home')">Inicio</a><br></li>
@@ -55,13 +60,13 @@
 
 
     </div> 
-<script> //recargar pagina 
+    <script> //recargar pagina 
     function recargar(logo){
         location.reload(); 
         }
 </script>
 
-
+<!-- Script para mostrar el contenido dinámico según la sección seleccionada -->
 <script>
     function mostrarContenido(seccion) {
         var contenido = {
