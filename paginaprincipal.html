@@ -6,6 +6,23 @@
     <title>Time Bank</title>
     <link rel="icon" href="LogoTimebank.png" type="logo-nav">
     <link rel="stylesheet" href="estilos.css"/link>
+    <script>
+        function checkLogin() {
+            const loggedIn = localStorage.getItem('loggedIn') === 'true';
+            if (!loggedIn) {
+                window.location.href = 'login_simulacion.html'; // Redirige a la página de inicio de sesión si no está autenticado
+            }
+        }
+        function logout() {
+            localStorage.removeItem('loggedIn');
+            window.location.href = 'login_simulacion.html'; // Redirige a la página de inicio de sesión al cerrar sesión
+        }
+        window.onload = checkLogin;
+        
+        function recargar() {
+            location.reload(); 
+        }
+    </script>
 </head>
 <body>
 
