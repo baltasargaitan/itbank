@@ -1,4 +1,7 @@
 # Primer Sprint: Nombre de nuestro banco: TIME BANK
+
+//
+
 # Grupo de trabajo: 
 Tomás Lopresti White
 Juan Luna
