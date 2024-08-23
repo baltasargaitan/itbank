@@ -8,5 +8,8 @@ Juan Luna
 Carolina Abril Camejo Martins Curto
 Natalia Julieta Medina
 Baltasar Gaitan Acevedo
-#Aclaraciones de ejecucón:
+
+//
+
+# Aclaraciones de ejecucón:
 Inicializar el programa desde el archivo login_simulación.html para la completa experiencia.
