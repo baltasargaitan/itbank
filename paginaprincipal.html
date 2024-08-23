@@ -5,32 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Bank</title>
     <link rel="icon" href="LogoTimebank.png" type="logo-nav">
-    <link rel="stylesheet" href="estilos.css"/link>
-    <script>
-        function checkLogin() {
-            const loggedIn = localStorage.getItem('loggedIn') === 'true';
-            if (!loggedIn) {
-                window.location.href = 'login_simulacion.html'; // Redirige a la página de inicio de sesión si no está autenticado
-            }
-        }
-        function logout() {
-            localStorage.removeItem('loggedIn');
-            window.location.href = 'login_simulacion.html'; // Redirige a la página de inicio de sesión al cerrar sesión
-        }
-        window.onload = checkLogin;
-        
-        function recargar() {
-            location.reload(); 
-        }
-    </script>
+    <link rel="stylesheet" href="estilos.css" >
+    <script src="principal.js" defer></script>
 </head>
+
 <body>
 
 <header>
     <!-- Logo y título del banco que al hacer clic recarga la página -->
-    <a href="#" onclick="recargar()">
+    <a href="paginaprincipal.html"
         <h1>Time Bank</h1>
-        <img id="logo" width="100" height="100" alt="Logo del banco / recargar la página" src="LogoTimebank.png">
+        <img id="logo" alt="Logo del banco / recargar la página" src="LogoTimebank.png">
     </a>
    <!-- Contenedor del menú desplegable -->
     <div class="contenedor">
@@ -44,76 +29,26 @@
             <!-- Botón para cerrar el menú desplegable -->
             <label for="menu-toggle" id="close-button" aria-label="Close menu">x</label>
             <ul>
-                <li><a href="#" onclick="mostrarContenido('home')">Inicio</a><br></li>
-                <li><a href="cuentas.html" onclick="mostrarContenido('cuentas')">Cuentas</a><br></li>
-                <li><a href="Prestamo.html" onclick="mostrarContenido('prestamos')">Préstamos</a><br></li>
-                <li><a href="Transferencias.html" onclick="mostrarContenido('tarjetas')">Transferencias</a><br></li>
-                <li><a href="login_simulacion.html" ">Salir</a><br></li>
+                <li><a href="#" onclick="mostrarContenido('home');return false">Inicio</a><br></li>
+                <li><a href="cuentas.html">Cuentas</a><br></li>
+                <li><a href="Prestamo.html" >Préstamos</a><br></li>
+                <li><a href="Transferencias.html" >Transferencias</a><br></li>
+                <li><a href="login_simulacion.html" >Salir</a><br></li>
             </ul>
         </nav>
     </div>
 </header>
 
-</div>
-<script>
-    function desplegar() {
-        var content = document.getElementById('desplegable');
-        if (content.style.display === 'none') {
-            content.style.display = 'block';
-        } else {
-            content.style.display = 'none';
-        }
-    }
-</script>
 
+<!-- Área principal -->
+<div id="main-content">
+    <h2>Bienvenido a Time Bank</h3>
+    <h4>Estamos encantados de tenerte con nosotros. 
+    Explora nuestras funcionalidades y gestiona tus finanzas 
+    de manera fácil y segura. Si tienes alguna pregunta, nuestro equipo de soporte 
+    está aquí para ayudarte cuando gustes!</h4>
+</div> 
 
-    <!-- Área principal -->
-    <div id="main-content">
-        <h2>Bienvenido a Time Bank</h2>
-        <h4>Estamos encantados de tenerte con nosotros. 
-        Explora nuestras funcionalidades y gestiona tus finanzas 
-        de manera fácil y segura. Si tienes alguna pregunta, nuestro equipo de soporte 
-        está aquí para ayudarte cuando gustes!.</h4>
-
-
-    </div> 
-    <script> //recargar pagina 
-    function recargar(logo){
-        location.reload(); 
-        }
-</script>
-
-<!-- Script para mostrar el contenido dinámico según la sección seleccionada -->
-<script>
-    function mostrarContenido(seccion) {
-        var contenido = {
-            'home': `
-                <h3>Inicio</h3>
-                <p>Bienvenido a Time Bank. Aquí puedes gestionar todas tus cuentas y servicios financieros.</p>
-                `,
-            'cuentas': `
-                <h3>Cuentas</h3>
-                <p>Consulta la información sobre tus cuentas bancarias, saldos y movimientos.</p>
-            `,
-            'prestamos': `
-                <h3>Préstamos</h3>
-                <p>Conoce nuestros productos de préstamos y solicita el que mejor se adapte a tus necesidades.</p>
-            `,
-            'tarjetas': `
-                <h3>Transferencias</h3>
-                <p>Realizar transferencia.</p>
-            `,
-        };
-
-        // Actualizar el contenido del área principal
-        document.getElementById('main-content').innerHTML = contenido[seccion];
-    }
-</script>
-
-
-
-
-    
 <footer>  <a href="Políticas de Uso y Privacidad de Time Bank.ini" >Politicas de Uso y Privacidad de Time Bank</a></footer>
 </body>
 </html>
