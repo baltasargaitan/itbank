@@ -1,0 +1,108 @@
+.helpCenter {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fa0d051c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .searchSection input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #2c75a7;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .faqSection {
+    margin-bottom: 40px;
+  }
+  
+  .faqSection h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .faqSection ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .faqSection li {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .faqSection li strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .contactSection {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .contactSection h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .contactSection form div {
+    margin-bottom: 15px;
+  }
+  
+  .contactSection label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .contactSection input,
+  .contactSection textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .contactSection button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contactSection button:hover {
+    background-color: #45a049;
+  }
+  
+  .errorMessage {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
