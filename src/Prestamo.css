@@ -1,0 +1,45 @@
+/* Estilos generales para el contenedor que ocupa toda la ventana */
+
+/* Estilos para el componente loan-calculator */
+.loan-calculator {
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo opcional */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+    position: relative;
+    left: 180%;
+    top: 20%;
+    
+}
+
+/* Estilos para los inputs */
+input {
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+/* Estilos para el botón */
+button {
+    margin-top: 10px;
+    color: rgb(141, 0, 0);
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    background-color: rgb(201, 155, 155);
+    border-radius: 50px;
+    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+}
+
+button:hover {
+    color: rgb(255, 255, 255);
+    background-color: brown;
+}
+
+button:active {
+    background-color: rgb(112, 89, 89);
+}

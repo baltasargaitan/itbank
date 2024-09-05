@@ -1,0 +1,91 @@
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .main-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .page-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .Header {
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .Header .Titulo {
+    font-size: 50px;
+    font-family: 'Cinzel', serif;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .Header .Logo {
+    width: 70px;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+    z-index: 1000;
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  .sidebar-toggle {
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 15px;
+  }
+  
+  .sidebar ul li a,
+  .sidebar ul li button {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+  }
+  
+  .sidebar ul li a:hover,
+  .sidebar ul li button:hover {
+    background-color: #555;
+  }
+  

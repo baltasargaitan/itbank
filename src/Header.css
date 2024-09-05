@@ -1,0 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+.Header {
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra el contenido verticalmente */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 100px; /* Altura fija del header, ajusta según sea necesario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+    border-radius: 0 0 60% 60%; /* Bordes redondeados solo en la parte inferior */
+    /* Ajusta border-radius para obtener la apariencia deseada */
+    /* Si quieres bordes completamente redondeados en el header, puedes usar border-radius: 50%; */
+    /* En ese caso, asegúrate de que el height sea igual o mayor que el width para mantener la forma circular */
+}
+

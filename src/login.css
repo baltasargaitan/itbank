@@ -1,0 +1,54 @@
+
+.inicioSesion {
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo opcional */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+    position: relative;
+    left: 0%;
+    top: 20%;
+
+}
+
+/* Estilos para los labels y inputs */
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+/* Estilos para el botón de envío */
+button {
+    padding: 10px 20px;
+    background-color: brown; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto en el botón */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(96, 50, 50); /* Color de fondo cuando el botón está en hover */
+}
+
+button:active {
+    background-color: white; /* Color de fondo cuando el botón está presionado */
+}
+
+/* Estilos para el mensaje de error */
+.error-message {
+    color: red;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,18 @@
+.dineroContainer{
+    padding: 0px;
+    background-color: red;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    width: 400px;
+    position: relative;
+    margin:  auto;
+    color: white;
+    font-size: 20px;
+}
+
+.dinero{
+    font-size: 50px;
+    color: white;
+    padding: 0px;
+}
