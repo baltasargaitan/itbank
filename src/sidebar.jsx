@@ -64,10 +64,11 @@ const Sidebar = () => {
         <ul>
           <li><Link to="/">Inicio</Link></li>
           <li><Link to="/prestamos">Préstamos</Link></li>
-          <li><Link to="/transferencias">Transferencias</Link></li>
+          <li><Link to="/Transferencias">Transferencias</Link></li>
           <li><Link to="/cuentas">Cuentas</Link></li>
           <li><Link to="/login">Cerrar Sesión</Link></li>
           <li><Link to="/convertidor">Conversor de moneda</Link></li>
+          <li><Link to="/helpcenter">Centro de ayuda</Link></li>
 
         </ul>
       </div>

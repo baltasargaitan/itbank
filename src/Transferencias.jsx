@@ -1,39 +1,34 @@
-import React, {useState} from 'react';
-import styles from './Transferencias.module.css' 
+import React, { useState } from 'react';
+import styles from './Transferencias.module.css';
 
-const Transferencias = ({ actualizarDinero}) => {
-    const[usuario, setUsuario] = useState ('');
-    const[monto, setMonto] = useState ('')
+const Transferencias = ({ actualizarDinero }) => {
+    const [usuario, setUsuario] = useState('');
+    const [monto, setMonto] = useState('');
 
     const handleTransferencia = () => {
-        if (monto > 0){
-            actualizarDinero(monto);
-            alert(`Transferencia realizada  con exito a ${usuario} de $${monto}`);
-
-        setUsuario('');
-        setMonto('');
-        }else{
-            alert ('El monto debe ser mayor a 0');
+        if (monto > 0) {
+            actualizarDinero(parseFloat (monto));
+            setUsuario('');
+            setMonto('');
+        } else {
+            alert('El monto debe ser mayor a 0');
         }
     };
 
-    return(
+    return (
         <div className={styles.TransferenciasContainer}>
             <h2>Transferencias</h2>
-            <form onSubmit={(e) => {e.preventDefault (); handleTransferencia();}}>
-
-            <div className={styles.inputgroup}>
-                <label>Usuario:</label>
-                <input className={styles.input} type="text" value={usuario} onChange={(e) => setUsuario(e.target.value)}/>
-            </div>
-
-            <div className={styles.inputgroup}>
-                <label>Monto: </label>
-                <input className={styles.input} type="number" value={monto} onChange={(e) => setMonto(e.target.value)}/>
-            </div>
-
-            <button className={styles.button} type="submit">Realizar Transferencia</button>
-        </form>
+            <form onSubmit={(e) => { e.preventDefault(); handleTransferencia(); }}>
+                <div className={styles.inputgroup}>
+                    <label>Usuario:</label>
+                    <input className={styles.input} type="text" value={usuario} onChange={(e) => setUsuario(e.target.value)} />
+                </div>
+                <div className={styles.inputgroup}>
+                    <label>Monto:</label>
+                    <input className={styles.input} type="number" value={monto} onChange={(e) => setMonto(e.target.value)} />
+                </div>
+                <button className={styles.button} type="submit">Realizar Transferencia</button>
+            </form>
         </div>
     );
 };

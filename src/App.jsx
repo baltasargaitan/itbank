@@ -1,14 +1,13 @@
-
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './layout';
 import Prestamo from './prestamo';
-import Transferencias from './Transferencias';
 import Cuentas from './Cuentas';
-import Login from './Login';
+import Login from './LoginPage';
 import Convert from './convert';
-
 import DineroDisp from './DineroDisp';
+import HelpCenter from './Helpcenter';
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -23,8 +22,8 @@ const router = createBrowserRouter([
         element: <Prestamo />,
       },
       {
-        path: '/transferencias',
-        element: <Transferencias />,
+        path: '/transferencias', 
+        element: <DineroDisp />, // Usar DineroDisp en lugar de Transferencias
       },
       {
         path: '/cuentas',
@@ -33,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: '/convertidor',
         element: <Convert />,
+      },
+      {
+        path: '/helpcenter',
+        element: <HelpCenter/>
       },
     ],
   },
@@ -45,4 +48,5 @@ const App = () => {
 };
 
 export default App;
+
 

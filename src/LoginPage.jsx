@@ -1,3 +1,4 @@
+import "./login.css"
 import {useState} from 'react';
 import {useNavigate} from 'react-router-dom';function Login() {
     const [nombreUsuario, setNombreUsuario]= useState ('');
