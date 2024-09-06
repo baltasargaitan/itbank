@@ -1,49 +1,48 @@
-
-// src/components/Transferencias.js
-
+// Transferencias.js
 import React, { useState } from 'react';
+import { useDinero } from '../Cuentas/DineroContext';
 import styles from './Transferencias.module.css';
 
-const Transferencias = ({ actualizarDinero }) => {
+const Transferencias = () => {
     const [usuario, setUsuario] = useState('');
     const [monto, setMonto] = useState('');
+    const { handleActualizarDinero } = useDinero();
 
-    const handleTransferencia = () => {
-        if (usuario && monto > 0 ) {
-            actualizarDinero(parseFloat(monto),usuario);
-            setUsuario('');
-            setMonto('');
-        } else {
-            // Manejar el mensaje de error a través del contexto
-            actualizarDinero(0, 'El monto debe ser mayor a 0'); // Aquí `actualizarDinero` debe aceptar un segundo parámetro para el mensaje
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const montoNumero = Number(monto);
+        if (isNaN(montoNumero) || montoNumero <= 0) {
+            alert('Por favor, ingresa un monto válido.');
+            return;
         }
+        handleActualizarDinero(montoNumero, usuario);
+        setUsuario('');
+        setMonto('');
     };
 
     return (
-        <div className={styles.TransferenciasContainer}>
-            <h2>Transferencias</h2>
-            <form onSubmit={(e) => { e.preventDefault(); handleTransferencia(); }}>
-                <div className={styles.inputgroup}>
-                    <input required
-                        className={styles.input}
-                        type="text"
-                        value={usuario}
-                        onChange={(e) => setUsuario(e.target.value)}
-                        placeholder='Destinatario'
-                    />
-                </div>
-                <div className={styles.inputgroup}>
-                    <input required
-                        className={styles.input}
-                        type="number"
-                        value={monto}
-                        onChange={(e) => setMonto(e.target.value)}
-                        placeholder='Monto'
-                    />
-                </div>
-                <button className={styles.button} type="submit">Realizar Transferencia</button>
-                
-            </form>
+        <div className={styles.Transferenciascontainer}> 
+            <form onSubmit={handleSubmit}>
+            <h1>Nueva transferencia: </h1>
+            <div className={styles.inputGroup}> 
+            <input
+                type="text"
+                value={usuario}
+                onChange={(e) => setUsuario(e.target.value)}
+                placeholder="Destinatario"
+                required
+            />
+            </div>
+            <input
+                type="number"
+                value={monto}
+                onChange={(e) => setMonto(e.target.value)}
+                placeholder="Monto"
+                min="1"
+                required
+            />
+            <button type="submit">Transferir</button>
+        </form>
         </div>
     );
 };

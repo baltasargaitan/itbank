@@ -1,22 +1,27 @@
+// HistorialMovimientos.js
 import React from 'react';
-import styles from './HistorialMovimientos.module.css'; // Asegúrate de tener este archivo CSS
+import { useDinero } from './DineroContext';
+import styles from './HistorialMovimientos.module.css';
 
-const HistorialMovimientos = ({ movimientos }) => {
+const HistorialMovimientos = () => {
+    const { movimientos = [] } = useDinero();  // Asegúrate de que movimientos sea un array
+
     return (
         <div className={styles.historialContainer}>
-            <h2>Últimos Movimientos</h2>
-            <ul className={styles.listaMovimientos}>
-                {movimientos.length === 0 ? (
-                    <li>No hay movimientos recientes.</li>
-                ) : (
+            <h3>Historial de Movimientos:</h3>
+            <ul>
+                {movimientos.length > 0 ? (
                     movimientos.map((movimiento, index) => (
-                        <li key={index} className={styles.movimientoItem}>
-                            Transferiste ${movimiento.monto} a {movimiento.usuario}. 
+                        <li key={index}>
+                            {movimiento.monto}$ a: {movimiento.usuario}
                         </li>
                     ))
+                ) : (
+                    <li>No hay movimientos recientes.</li>
                 )}
             </ul>
         </div>
     );
 };
+
 export default HistorialMovimientos;

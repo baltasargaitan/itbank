@@ -1,41 +1,53 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { DineroProvider } from './Cuentas/DineroContext';
+import { AuthProvider } from './Login/AuthContext'; 
 import Layout from './Layout/layout';
 import Prestamo from './Prestamo/prestamo';
 import Convert from './Conversor/convert';
 import DineroDisp from './Cuentas/DineroDisp';
 import HelpCenter from './Help/Helpcenter';
 import Cuentas from './Cuentas/Cuentas';
-/*import Login from './login/LoginPage';*/
+import Login from './Login/Login';
+import Signup from './Login/Signup';
+import ProtectedRoute from './Login/ProtectedRoute'; 
+import LandPage from './Inicio/Inicio';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
     children: [
-      /*{
-        path: '/login',
-        element: <Login />, // Página de inicio de sesión
-      },*/
       {
-        path: '/prestamos',
-        element: <Prestamo />,
+        path: '/inicio',
+        element: <LandPage />,
+      },      {
+        path: '/login',
+        element: <Login />,
       },
       {
-        path: '/transferencias', 
-        element: <DineroDisp />, // Usar DineroDisp en lugar de Transferencias
+        path: '/signup',
+        element: <Signup />,
+      },
+      {
+        path: '/prestamos',
+        element: <ProtectedRoute element={<Prestamo />} />,
+      },
+      {
+        path: '/transferencias',
+        element: <ProtectedRoute element={<DineroDisp />} />,
       },
       {
         path: '/cuentas',
-        element: <Cuentas />,
+        element: <ProtectedRoute element={<Cuentas />} />,
       },
       {
         path: '/convertidor',
-        element: <Convert />,
+        element: <ProtectedRoute element={<Convert />} />,
       },
       {
         path: '/helpcenter',
-        element: <HelpCenter/>
+        element: <HelpCenter />,
       },
     ],
   },
@@ -43,7 +55,11 @@ const router = createBrowserRouter([
 
 const App = () => {
   return (
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <DineroProvider>
+        <RouterProvider router={router} />
+      </DineroProvider>
+    </AuthProvider>
   );
 };
 

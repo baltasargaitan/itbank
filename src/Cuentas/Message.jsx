@@ -1,26 +1,15 @@
-// src/components/Message.js
-
-import React, { useEffect } from 'react';
-import styles from './Message.module.css';
+// Message.js
+import React from 'react';
+import styles from './DineroDisp.module.css';
 
 const Message = ({ text, onClose }) => {
-  useEffect(() => {
-    if (text) {
-      const timer = setTimeout(() => {
-        onClose();
-      }, 4000);
-
-      return () => clearTimeout(timer);
-    }
-  }, [text, onClose]);
-
-  if (!text) return null;
-
-  return (
-    <div className={styles.messageContainer}>
-      <p>{text}</p>
-    </div>
-  );
+    if (!text) return null;
+    return (
+        <div className={styles.message}>
+            <p>{text}</p>
+            <button onClick={onClose}>Cerrar</button>
+        </div>
+    );
 };
 
 export default Message;

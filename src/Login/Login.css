@@ -1,17 +1,24 @@
 
 .inicioSesion {
     max-width: 500px;
+    color: white;
+    padding: 0;
+    max-width: 500px;
     text-align: center;
     padding: 20px;
-    background-color: #f9f9f9; /* Fondo opcional */
-    border-radius: 10px; /* Bordes redondeados opcionales */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
-    position: relative;
-    left: 0%;
-    top: 20%;
-
+    background-color: brown;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Cinzel', serif;
 }
 
+.mensaje-exito h1 {
+    color: white;
+}
 /* Estilos para los labels y inputs */
 label {
     display: block;
@@ -26,12 +33,18 @@ input {
     border-radius: 5px;
     box-sizing: border-box; /* Incluye padding y border en el ancho total */
 }
+.inicioSesion a  {
+    color:rgb(252, 252, 252);
+}
+.inicioSesion h1  {
+    color:rgb(252, 252, 252);
+}
 
 /* Estilos para el botón de envío */
 button {
     padding: 10px 20px;
-    background-color: brown; /* Color de fondo del botón */
-    color: #ffffff; /* Color del texto en el botón */
+    background-color: rgb(255, 255, 255); /* Color de fondo del botón */
+    color: #000000; /* Color del texto en el botón */
     border: none;
     border-radius: 5px;
     cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
@@ -51,4 +64,41 @@ button:active {
 .error-message {
     color: red;
     margin-bottom: 15px;
+}
+
+
+.CrearC {
+    max-width: 500px;
+    color: white;
+    padding: 0;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+    background-color: brown;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Cinzel', serif;
+}
+.CrearC h1,a {
+    color: white;
+}
+.mensaje-exito {
+    max-width: 500px;
+    color: white;
+    padding: 0;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+    background-color: brown;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Cinzel', serif;
 }

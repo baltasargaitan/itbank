@@ -1,6 +1,7 @@
 /* Contenedor del sidebar y el botón de toggling */
 .sidebar-container {
     position: relative;
+    background-color: brown;
   }
   
   /* Estilos del sidebar */
@@ -10,7 +11,7 @@
     left: 0;
     width: 250px; /* Ancho del sidebar */
     height: 100%;
-    background-color: #333; /* Color de fondo del sidebar */
+    background-color: brown; /* Color de fondo del sidebar */
     color: #fff; /* Color del texto en el sidebar */
     overflow-x: hidden;
     overflow-y: auto; /* Permite el scroll si el contenido es más largo que el viewport */
@@ -28,7 +29,7 @@
   .sidebar-toggle {
     position: relatives;
     top: 50%;
-    color: #333;
+    color: brown;
     border: none;
     border-radius: 50%; /* Bordes redondeados solo en el lado izquierdo */
     width: 50px;
@@ -44,7 +45,7 @@
   
   /* Cambia el color del botón cuando el sidebar está abierto */
   .sidebar-toggle.open {
-    background-color: #563838; /* Cambia el color si es necesario */
+    background-color: #6b0000; /* Cambia el color si es necesario */
   }
   
   /* Color del botón cuando está en hover */
@@ -59,10 +60,7 @@
     padding: 20px; /* Añade espacio interno al contenido principal */
   }
   
-  .sidebar.open ~ .main-content {
-    margin-left: 250px; /* Desplaza el contenido principal hacia la derecha cuando el sidebar está abierto */
-  }
-  
+
   /* Estilos para la lista de elementos del sidebar */
   .sidebar ul {
     list-style-type: none;
@@ -84,6 +82,6 @@
   }
   
   .sidebar ul li a:hover {
-    background-color: #555; /* Color de fondo cuando el enlace está en hover */
+    background-color: #944747; /* Color de fondo cuando el enlace está en hover */
   }
   

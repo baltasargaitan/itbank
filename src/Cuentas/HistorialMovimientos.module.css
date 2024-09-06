@@ -1,29 +1,40 @@
 
 .historialContainer {
-    padding: 20px;
-    background-color: brown;
+    padding: 2%;
+    background-color: rgb(255, 255, 255);
     border-radius: 8px;
-    color: white;
+    color: brown;
     font-family: 'Cinzel', serif;
     max-width: 500px;
     margin: 20px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
 
-    
 }
 
-.listaMovimientos {
+.historialContainer ul {
+    display:flex;
+    flex-direction: column;
     list-style: none;
-    padding: 0;
-    margin: 0;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    box-sizing: border-box;
+
 }
 
-.movimientoItem {
+.historialContainer li{
+    flex: 0 0 auto;
     padding: 10px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 2px solid brown;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+
 }
 
-.movimientoItem:last-child {
+.historialContainer ul li:last-child {
     border-bottom: none;
+    width: 100%;
 }
