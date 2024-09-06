@@ -1,7 +1,7 @@
 
 import React from 'react';
 import './Header.css';
-import RelojLogo from './RelojLogo';
+import RelojLogo from '../Logo/RelojLogo';
 
 const Header = () => {
   return (

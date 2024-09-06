@@ -1,0 +1,32 @@
+.TransferenciasContainer {
+    font-family: 'Cinzel', serif;
+    max-width: 100%; /* Asegúrate de que el contenedor no exceda el ancho del contenedor padre */
+    text-align: center;
+    padding: 20px;
+    background-color: brown(255, 152, 152);
+    border-radius: 10px;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
+    margin-top: 20px; /* Añadir un margen superior para separar de los elementos anteriores */
+}
+
+.inputGroup {
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+}
+
+input {
+    font-family: 'Cinzel', serif;
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+}
+
+button {
+    font-family: 'Cinzel', serif;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+}

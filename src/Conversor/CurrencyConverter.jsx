@@ -29,7 +29,7 @@ function CurrencyConverter({
           type="number"
           value={amount}
           onChange={(e) => onAmountChange(e.target.value)}
-          placeholder="Cantidad"
+          placeholder="Monto a convertir: "
         />
         <select
           value={toCurrency}

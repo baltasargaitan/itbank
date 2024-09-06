@@ -1,22 +1,22 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Layout from './layout';
-import Prestamo from './prestamo';
-import Cuentas from './Cuentas';
-import Login from './LoginPage';
-import Convert from './convert';
-import DineroDisp from './DineroDisp';
-import HelpCenter from './Helpcenter';
+import Layout from './Layout/layout';
+import Prestamo from './Prestamo/prestamo';
+import Convert from './Conversor/convert';
+import DineroDisp from './Cuentas/DineroDisp';
+import HelpCenter from './Help/Helpcenter';
+import Cuentas from './Cuentas/Cuentas';
+/*import Login from './login/LoginPage';*/
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
     children: [
-      {
+      /*{
         path: '/login',
         element: <Login />, // Página de inicio de sesión
-      },
+      },*/
       {
         path: '/prestamos',
         element: <Prestamo />,
@@ -48,5 +48,3 @@ const App = () => {
 };
 
 export default App;
-
-

@@ -1,0 +1,32 @@
+/* src/components/Message.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+.messageContainer {
+  font-family: 'Cinzel', serif;
+    padding: 10px;
+    background-color: brown;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    position: fixed;
+    bottom:50%;
+    left: 18%;
+    transform: translateX(-50%);
+    max-width: 300px;
+    margin: auto;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .closeButton {
+    font-family: 'Cinzel', serif;
+    background-color: darkred;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

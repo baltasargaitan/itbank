@@ -14,8 +14,7 @@ const Sidebar = () => {
   };
 
   const handleLogout = () => {
-    // Aquí puedes añadir lógica para cerrar sesión si es necesario
-    navigate('/login'); // Redirige al inicio de sesión
+    navigate('/login');
   };
 
   useEffect(() => {
@@ -68,7 +67,7 @@ const Sidebar = () => {
           <li><Link to="/cuentas">Cuentas</Link></li>
           <li><Link to="/login">Cerrar Sesión</Link></li>
           <li><Link to="/convertidor">Conversor de moneda</Link></li>
-          <li><Link to="/helpcenter">Centro de ayuda</Link></li>
+          <li><Link to="/helpcenter">Centro de ayuda TimeX</Link></li>
 
         </ul>
       </div>
