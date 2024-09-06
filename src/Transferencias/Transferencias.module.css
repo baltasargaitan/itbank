@@ -1,4 +1,4 @@
-.TransferenciasContainer {
+.Transferenciascontainer {
     font-family: 'Cinzel', serif;
     max-width: 100%; /* Asegúrate de que el contenedor no exceda el ancho del contenedor padre */
     text-align: center;
@@ -8,6 +8,11 @@
     box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
     margin-top: 20px; /* Añadir un margen superior para separar de los elementos anteriores */
 
+    
+
+}
+.Transferenciascontainer h1 {
+    color: white;
 }
 .inputGroup {
     margin: 10px 0;

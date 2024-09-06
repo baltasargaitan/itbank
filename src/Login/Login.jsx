@@ -25,7 +25,7 @@ function Login() {
 
         if (nombreUsuario === NombreUsuarioGuardado && contrasenia === ContraseniaGuardado) {
             login();
-            navigate('/'); // Redirige a la página principal después de iniciar sesión
+            navigate('/inicio'); // Redirige a la página principal después de iniciar sesión
         } else {
             setMensajeError('Nombre de usuario o contraseña incorrectos');
         }
@@ -35,7 +35,7 @@ function Login() {
         <div className='inicioSesion'>
             <h1>Iniciar sesión</h1>
             <form onSubmit={handleSubmit}>
-                {mensajeError && <p style={{ color: 'red' }}>{mensajeError}</p>}
+                {mensajeError && <p>{mensajeError}</p>}
                 <div>
                     <label htmlFor="nombreUsuario"></label>
                     <input

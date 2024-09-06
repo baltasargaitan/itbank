@@ -15,6 +15,9 @@
     transform: translate(-50%, -50%);
     font-family: 'Cinzel', serif;
 }
+.inicioSesion p {
+    color: white;
+}
 
 .mensaje-exito h1 {
     color: white;
@@ -62,7 +65,7 @@ button:active {
 
 /* Estilos para el mensaje de error */
 .error-message {
-    color: red;
+    color: rgb(252, 252, 252);
     margin-bottom: 15px;
 }
 
@@ -86,6 +89,9 @@ button:active {
 .CrearC h1,a {
     color: white;
 }
+
+
+
 .mensaje-exito {
     max-width: 500px;
     color: white;

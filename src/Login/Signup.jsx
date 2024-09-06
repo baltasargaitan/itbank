@@ -29,14 +29,14 @@ function Signup() {
     const manejoVolverHome = () => navigate('/login');
 
     return (
-        <div className="crearCuenta">
+        <div className="crearC">
             {cuentaCreada ? (
                 <div className="mensaje-exito">
                     <h1>Cuenta creada exitosamente!!</h1>
                     <button onClick={manejoVolverHome}>Volver a la página de inicio</button>
                 </div>
             ) : (
-                <div className="Crear">
+                <div className="CrearC">
                     <h1>Crea tu cuenta en TimeBank</h1>
                     <form onSubmit={handleSubmit}>
                         <div>

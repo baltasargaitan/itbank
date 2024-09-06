@@ -67,7 +67,7 @@ const Sidebar = () => {
           <li><Link to="/cuentas">Cuentas</Link></li>
           <li><Link to="/convertidor">Conversor de moneda</Link></li>
           <li><Link to="/helpcenter">Centro de ayuda TimeX</Link></li>
-          <li><Link to="/login">Cerrar Sesión</Link></li>
+          <li><Link to="/">Cerrar Sesión</Link></li>
         </ul>
       </div>
     </div>
