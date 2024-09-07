@@ -1,20 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap');
 
 .historialContainer {
     padding: 2%;
     background-color: rgb(255, 255, 255);
     border-radius: 8px;
     color: brown;
-    font-family: 'Cinzel', serif;
+    font-family: 'Montserrat', sans-serif; /* Actualizado a Montserrat */
     max-width: 500px;
     margin: 20px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     flex-wrap: wrap;
-
 }
 
 .historialContainer ul {
-    display:flex;
+    display: flex;
     flex-direction: column;
     list-style: none;
     font-size: 20px;
@@ -22,20 +22,19 @@
     margin: 0px;
     width: 100%;
     box-sizing: border-box;
-
 }
 
-.historialContainer li{
+.historialContainer li {
     flex: 0 0 auto;
     padding: 10px;
     border-bottom: 2px solid brown;
     width: 100%;
     box-sizing: border-box;
     position: relative;
-
 }
 
 .historialContainer ul li:last-child {
     border-bottom: none;
     width: 100%;
 }
+

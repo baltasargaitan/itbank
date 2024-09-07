@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap');
 
 .dineroContainer {
     color: white;
@@ -13,24 +13,22 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Cinzel', serif;
-
+    font-family: 'Montserrat', sans-serif; /* Actualizado a Montserrat */
 }
 
 /* Estilo específico para el dineroDisp */
 .dineroDisp {
     border-radius: 20px;
-    border: 1px solid rgb(255, 255, 255); /* Se añadió el estilo para el borde */
+    border: 1px solid rgb(255, 255, 255); /* Borde blanco */
     box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
     z-index: 1;
     padding: 10px;
 }
 
 .dineroDisp h2 {
-    background-color: inherit; /* Heredar el color de fondo del contenedor */
-    font-family: 'Cinzel', serif;
+    background-color: inherit; /* Hereda el color de fondo del contenedor */
+    font-family: 'Montserrat', sans-serif; /* Actualizado a Montserrat */
     font-size: 20px;
-
 }
 
 .dineroDisp p {
@@ -79,3 +77,4 @@
         font-size: 26px; /* Ajusta el tamaño de la fuente del párrafo */
     }
 }
+

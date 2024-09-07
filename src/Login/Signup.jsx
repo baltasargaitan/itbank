@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from './AuthContext'; // Asegúrate de que la ruta sea correcta
-import style from './Login.css'
+import './Login.css'
+
 function Signup() {
     const [nombreUsuario, setNombreUsuario] = useState('');
     const [contrasenia, setContrasenia] = useState('');

@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .inicioSesion {
     max-width: 500px;
     color: white;
     padding: 0;
-    max-width: 500px;
     text-align: center;
     padding: 20px;
     background-color: brown;
@@ -13,8 +13,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Cinzel', serif;
+    font-family: "Montserrat", sans-serif; 
 }
+
 .inicioSesion p {
     color: white;
 }
@@ -22,6 +23,7 @@
 .mensaje-exito h1 {
     color: white;
 }
+
 /* Estilos para los labels y inputs */
 label {
     display: block;
@@ -35,12 +37,15 @@ input {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    font-family: "Montserrat", sans-serif; 
 }
-.inicioSesion a  {
-    color:rgb(252, 252, 252);
+
+.inicioSesion a {
+    color: rgb(252, 252, 252);
 }
-.inicioSesion h1  {
-    color:rgb(252, 252, 252);
+
+.inicioSesion h1 {
+    color: rgb(252, 252, 252);
 }
 
 /* Estilos para el botón de envío */
@@ -53,28 +58,27 @@ button {
     cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
     font-size: 16px;
     transition: background-color 0.3s ease;
+    font-family: "Montserrat", sans-serif; 
 }
 
 button:hover {
-    background-color: rgb(96, 50, 50); /* Color de fondo cuando el botón está en hover */
+    background-color: rgb(96, 50, 50); 
 }
 
 button:active {
     background-color: white; /* Color de fondo cuando el botón está presionado */
 }
 
-/* Estilos para el mensaje de error */
 .error-message {
     color: rgb(252, 252, 252);
     margin-bottom: 15px;
+    font-family: "Montserrat", sans-serif; 
 }
-
 
 .CrearC {
     max-width: 500px;
     color: white;
     padding: 0;
-    max-width: 500px;
     text-align: center;
     padding: 20px;
     background-color: brown;
@@ -84,19 +88,17 @@ button:active {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Cinzel', serif;
+    font-family: "Montserrat", sans-serif; 
 }
-.CrearC h1,a {
+
+.CrearC h1, a {
     color: white;
 }
-
-
 
 .mensaje-exito {
     max-width: 500px;
     color: white;
     padding: 0;
-    max-width: 500px;
     text-align: center;
     padding: 20px;
     background-color: brown;
@@ -106,5 +108,13 @@ button:active {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Cinzel', serif;
+    font-family: "Montserrat", sans-serif; 
 }
+
+
+input, button {
+    font-family: "Montserrat", sans-serif !important; 
+}
+
+
+

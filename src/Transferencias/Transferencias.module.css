@@ -1,41 +1,44 @@
-.Transferenciascontainer {
-    font-family: 'Cinzel', serif;
-    max-width: 100%; /* Asegúrate de que el contenedor no exceda el ancho del contenedor padre */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap');
+
+.TransferenciasContainer {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100%; /* Asegura que el contenedor no exceda el ancho */
     text-align: center;
     padding: 20px;
-    background-color: brown(255, 152, 152);
+    background-color: rgb(255, 152, 152); /* Color de fondo */
     border-radius: 10px;
     box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
-    margin-top: 20px; /* Añadir un margen superior para separar de los elementos anteriores */
-
-    
-
+    margin-top: 20px; /* Añade un margen superior */
 }
-.Transferenciascontainer h1 {
+
+.TransferenciasContainer h1 {
     color: white;
 }
+
 .inputGroup {
     margin: 10px 0;
-    padding: 10;
+    padding: 10px; 
     width: 100%;
 }
+
 h1 {
     color: white;
     position: relative;
     top: 10px;
 }
+
 input {
     border-radius: 1%;
-    border: 1px;
+    border: 1px solid black; /* Añadí un borde sólido negro */
     color: black;
-    font-family: 'Cinzel', serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 10px 0;
     padding: 8px;
     width: 100%;
 }
 
 button {
-    font-family: 'Cinzel', serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 10px;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -44,12 +47,10 @@ button {
 }
 
 @media (max-width: 600px) {
-
-
     .TransferenciasContainer {
         height: calc(100vh - 50px); /* Ajusta la altura para pantallas pequeñas */
-        margin-top: 50px; /* Ajusta el margen superior para pantallas pequeñas */
-        padding: 5px; /* Ajusta el padding interno para pantallas pequeñas */
+        margin-top: 50px;
+        padding: 5px;
     }
 
     li {
@@ -57,9 +58,9 @@ button {
     }
 }
 
-/* Media Query para tabletas */
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .TransferenciasContainer {
-        height: calc(100vh - 55px); /* Ajusta la altura para pantallas de tamaño medio */
-        margin-top: 55px; /* Ajusta el margen superior para pantallas de tamaño medio */
-    }}
+        height: calc(100vh - 55px); /* Ajusta la altura para pantallas medianas */
+        margin-top: 55px;
+    }
+}

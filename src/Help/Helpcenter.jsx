@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './HelpCenter.module.css'; // Importa los estilos como módulos
+import styles from './HelpCenter.module.css'; 
 
 const HelpCenter = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -9,7 +9,7 @@ const HelpCenter = () => {
   const faqs = [
     { question: '¿Cómo puedo realizar una transferencia?', answer: 'Puedes ingresar a la seccion Transferencias e ingresar los datos necesarios.' },
     { question: '¿Cual es el horario de atención de Timex?', answer: 'El horario de atencion es de 9 AM a 18 PM.' },
-    { question: '¿Donde puedo comunicarme con Timex?', answer: 'Dejanos tu mensaje y contestaremos a la brevedad'}]
+    { question: '¿Donde puedo comunicarme con Time Bank?', answer: 'Dejanos tu mensaje y contestaremos a la brevedad'}]
 
   const handleSearchChange = (e) => setSearchTerm(e.target.value);
 

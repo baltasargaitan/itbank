@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 .loan-calculator {
     color: white;
@@ -13,19 +13,19 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Cinzel', serif;
-
+    font-family: 'Montserrat', sans-serif;
 }
+
 .loan-calculator h1 {
     color: white;
 }
+
 input {
     margin: 10px 0;
     padding: 8px;
     width: 100%;
     box-sizing: border-box;
-    font-family: 'Cinzel', serif;
-
+    font-family: 'Montserrat', sans-serif;
 }
 
 button {
@@ -38,8 +38,7 @@ button {
     background-color: rgb(255, 255, 255);
     border-radius: 50px;
     cursor: pointer;
-    font-family: 'Cinzel', serif;
-
+    font-family: 'Montserrat', sans-serif;
 }
 
 button:hover {
