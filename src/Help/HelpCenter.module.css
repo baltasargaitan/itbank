@@ -2,19 +2,18 @@
 
 .helpCenter {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto; /* Ajusta el margen superior e inferior */
     padding: 20px;
-    background-color: #fa0d051c;
+    background-color: rgba(165, 42, 42, 0.349);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    right: 35%;
+    position: relative; /* Cambiado de absolute a relative */
     font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: black;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -24,7 +23,7 @@ h1 {
     padding: 10px;
     font-size: 16px;
     margin-bottom: 20px;
-    border: 1px solid brown;
+    border: 1px solid black;
     border-radius: 5px;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
@@ -36,7 +35,7 @@ h1 {
 
 .faqSection h2 {
     font-size: 22px;
-    color: #333;
+    color: black;
     margin-bottom: 15px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -121,5 +120,6 @@ h1 {
     margin-top: 10px;
     font-family: 'Montserrat', sans-serif;
 }
+
 
   

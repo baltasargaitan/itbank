@@ -12,42 +12,41 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: "Montserrat", sans-serif; /* Aplicando Montserrat */
+    font-family: "Montserrat", sans-serif; 
 }
 
 .landpage-container h1 {
     color: rgb(255, 255, 255);
-    font-family: "Montserrat", sans-serif; /* Aplicando Montserrat */
+    font-family: "Montserrat", sans-serif; 
 }
 
 .landpage-container p {
     color: rgb(255, 255, 255);
     margin-bottom: 20px;
-    font-family: "Montserrat", sans-serif; /* Aplicando Montserrat */
+    font-family: "Montserrat", sans-serif; 
 }
 
-/* Estilos para el botón */
+
 button {
     padding: 10px 20px;
-    background-color: rgb(255, 255, 255); /* Color de fondo del botón */
-    color: #000000; /* Color del texto */
+    background-color: rgb(255, 255, 255); 
+    color: #000000; 
     border: none;
     border-radius: 5px;
-    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+    cursor: pointer; 
     font-size: 16px;
     transition: background-color 0.3s ease;
-    font-family: "Montserrat", sans-serif; /* Aplicando Montserrat */
+    font-family: "Montserrat", sans-serif; 
 }
 
 button:hover {
-    background-color: rgb(96, 50, 50); /* Color de fondo cuando está en hover */
+    background-color: rgb(96, 50, 50);
 }
 
 button:active {
-    background-color: white; /* Color de fondo cuando está presionado */
+    background-color: white; 
 }
 
-/* Forzando Montserrat para botones y textos donde sea necesario */
 button, p, h1 {
-    font-family: "Montserrat", sans-serif !important; /* Aplicando Montserrat con !important */
+    font-family: "Montserrat", sans-serif !important; 
 }

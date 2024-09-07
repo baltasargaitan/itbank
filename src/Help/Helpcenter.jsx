@@ -30,7 +30,7 @@ const HelpCenter = () => {
 
   return (
     <div className={styles.helpCenter}>
-      <h1>Centro de Ayuda Timex</h1>
+      <h1>Centro de Ayuda Time Bank</h1>
 
       <div className={styles.searchSection}>
         <input
