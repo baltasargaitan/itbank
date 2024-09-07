@@ -10,6 +10,7 @@ import HelpCenter from './Help/Helpcenter';
 import Cuentas from './Cuentas/Cuentas';
 import Login from './Login/Login';
 import Signup from './Login/Signup';
+import Tarjetas from './Tarjetas/Tarjetas';
 import ProtectedRoute from './Login/ProtectedRoute'; 
 import LandPage from './Inicio/Inicio';
 
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: '/cuentas',
         element: <ProtectedRoute element={<Cuentas />} />,
+      },
+      {
+        path: '/tarjetas',
+        element: <ProtectedRoute element={<Tarjetas />} />,
       },
       {
         path: '/convertidor',
