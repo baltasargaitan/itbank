@@ -16,7 +16,7 @@ const LandPage = () => {
     return (
         <div className="landpage-container">
             <h1>¡Hola, {nombreUsuario}!</h1>
-            <p>Bienvenido a TimeBank.</p>
+            <p>Bienvenido a Time Bank.</p>
 
         </div>
     );
