@@ -4,23 +4,21 @@ import { Outlet } from 'react-router-dom';
 import Sidebar from '../Sidebar/sidebar';
 import './Layout.css';
 import Header from '../Header/header';
-import Login from '../Login/Login';
+import Footer from '../Footer/Footer';
 
 const Layout = () => {
   return (
-
-      <div className="layout">
-        <Header />
-        <div className="main-content">
-          <Sidebar />
-          <div className="content">
-            <Outlet /> {/* Aquí se renderiza el contenido según la ruta */}
-    </div>
-      </div>
+    <div className="layout-container">
+      <Header />
+      <div className="main-content">
+        <Sidebar />
+        <div className="page-content">
+          <Outlet /> 
         </div>
+      </div>
+      <Footer /> 
+    </div>
   );
 };
 
 export default Layout;
-/* <Foter/> va en el div entre Outlet y cierre
-*/

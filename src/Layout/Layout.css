@@ -99,4 +99,15 @@
   background-color: #555;
 }
 
+/* Nueva sección para el footer */
+
+.footer {
+  background-color: brown;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  border-top: 1px solid #ddd;
+}
+
   
