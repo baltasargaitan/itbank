@@ -14,9 +14,9 @@ export const DineroProvider = ({ children }) => {
         if (monto > 0 && dinero >= monto) {
             setDinero(dinero - monto);
             setMovimientos(prevMovimientos => [{ usuario, monto }, ...prevMovimientos].slice(0, 5));
-            setMessage(`Transferencia realizada con éxito a ${usuario} de $${monto}`);
+            setMessage(`Enviaste $${monto} a ${usuario}`);
         } else {
-            setMessage('Fondos insuficientes o monto inválido');
+            setMessage('Fondos insuficientes !');
         }
     };
 

@@ -1,13 +1,16 @@
 // Message.js
 import React from 'react';
-import styles from './DineroDisp.module.css';
+import { useDinero } from './DineroContext';
 
-const Message = ({ text, onClose }) => {
-    if (!text) return null;
+import styles from './Message.module.css';
+const Message = () => {
+    const { message, handleCloseMessage } = useDinero();
+    if (!message) return null;
+
     return (
         <div className={styles.message}>
-            <p>{text}</p>
-            <button onClick={onClose}>Cerrar</button>
+            <p>{message}</p>
+            <button onClick={handleCloseMessage}>X</button>
         </div>
     );
 };

@@ -17,11 +17,11 @@ const Card = ({ tier, name, number }) => {
 const Tarjetas = () => {
     return (
         <div className={styles.App}>
-            <Card tier="classic" name="Leo Messi" number="1234 5678 9012 3456" />
-            <Card tier="silver" name="Chiqui Tapia" number="1234 5678 6292 7140" />
-            <Card tier="gold" name="Diego Maradona" number="5678 9012 3456 1234" />
-            <Card tier="platinum" name="Max Verstappen" number="8765 4321 0987 6543" />
-            <Card tier="black" name="Cristiano Ronaldo" number="1122 3344 5566 7788" />
+            <Card tier="classic" name="Natalia Medina" number="1234 5678 9012 3456" />
+            <Card tier="silver" name="Carolina Camejo" number="1234 5678 6292 7140" />
+            <Card tier="gold" name="Juan Luna" number="5678 9012 3456 1234" />
+            <Card tier="platinum" name="Baltasar Gaitan" number="8765 4321 0987 6543" />
+            <Card tier="black" name="Luca Prodan" number="1122 3344 5566 7788" />
         </div>
     );
 };

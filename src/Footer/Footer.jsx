@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import './Footer.css'; // Asegúrate de crear este archivo CSS para el estilo
+import './Footer.css';
 
 const Footer = () => {
   return (
