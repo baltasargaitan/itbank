@@ -1,4 +1,3 @@
-// Dinero.js
 import React from 'react';
 import { useDinero } from './DineroContext';
 import styles from './DineroDisp.module.css';

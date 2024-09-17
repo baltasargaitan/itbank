@@ -1,6 +1,7 @@
-// Tarjetas.js
 import React from 'react';
-import styles from './Tarjetas.module.css'; // Asegúrate de que este sea el nombre correcto del archivo CSS
+import styles from './Tarjetas.module.css'; 
+
+const nombreUsuario = localStorage.getItem('usuario')?.split(': ')[1];
 
 const Card = ({ tier, name, number }) => {
     return (
@@ -17,11 +18,11 @@ const Card = ({ tier, name, number }) => {
 const Tarjetas = () => {
     return (
         <div className={styles.App}>
-            <Card tier="classic" name="Natalia Medina" number="1234 5678 9012 3456" />
-            <Card tier="silver" name="Carolina Camejo" number="1234 5678 6292 7140" />
-            <Card tier="gold" name="Juan Luna" number="5678 9012 3456 1234" />
-            <Card tier="platinum" name="Baltasar Gaitan" number="8765 4321 0987 6543" />
-            <Card tier="black" name="Luca Prodan" number="1122 3344 5566 7788" />
+            <Card tier="classic" name={nombreUsuario} number="1234 5678 9012 3456" />
+            <Card tier="silver" name={nombreUsuario} number="1234 5678 6292 7140" />
+            <Card tier="gold" name={nombreUsuario} number="5678 9012 3456 1234" />
+            <Card tier="platinum" name={nombreUsuario} number="8765 4321 0987 6543" />
+            <Card tier="black" name={nombreUsuario} number="1122 3344 5566 7788" />
         </div>
     );
 };

@@ -1,7 +1,6 @@
-// Cuentas.js
 import React from 'react';
 import './cuentas.css';
-import { useDinero } from './DineroContext'; // Importa el hook para acceder al contexto
+import { useDinero } from './DineroContext'; 
 
 const Cuenta = ({ title, amount, currency }) => {
   return (
@@ -13,7 +12,7 @@ const Cuenta = ({ title, amount, currency }) => {
 };
 
 const Cuentas = () => {
-  const { dinero } = useDinero(); // Obtén el dinero del contexto
+  const { dinero } = useDinero(); 
 
   return (
     <div className="cuentas-container">

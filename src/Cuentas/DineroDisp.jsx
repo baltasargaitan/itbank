@@ -1,4 +1,3 @@
-// DineroDisp.js
 import React from 'react';
 import Dinero from './dinero';
 import Transferencias from '../Transferencias/Transferencias';
